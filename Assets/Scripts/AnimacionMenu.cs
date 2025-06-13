@@ -3,9 +3,9 @@ using DG.Tweening;
 
 public class AnimacionMenu : MonoBehaviour
 {
-    public RectTransform titulo;
-    public RectTransform botonCargar;
-    public RectTransform botonSalir;
+    [SerializeField]private RectTransform titulo;
+    [SerializeField]private RectTransform botonCargar;
+    [SerializeField]private RectTransform botonSalir;
 
     void Start()
     {
