@@ -8,10 +8,6 @@ public class InputReader : MonoBehaviour
 
     public void Movimiento(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
-            Vector2 input = context.ReadValue<Vector2>();
-            OnMove?.Invoke(input);
-        }
+        OnMove?.Invoke(context.ReadValue<Vector2>());   
     }
 }
